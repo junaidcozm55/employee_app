@@ -1,0 +1,82 @@
+[
+  {
+    "id": "t1",
+    "title": "Select benefit elections",
+    "subtitle": "Schooling, housing & family support.",
+    "status": "In Progress",
+    "statusColor": "text-yellow-600 bg-yellow-50",
+    "dueDate": "Due in 3 days",
+    "iconColor": "text-yellow-600 bg-yellow-50",
+    "iconName": "document-text-outline",
+    "tags": ["Required", "In Progress", "All"],
+    "detailsType": "benefits",
+    "details": {
+      "housing": "Provided housing",
+      "schooling": false,
+      "healthInsurance": true,
+      "homeFlights": false,
+      "vehicle": false
+    }
+  },
+  {
+    "id": "t2",
+    "title": "Provide Documents",
+    "subtitle": "Upload passport, visa & contracts.",
+    "status": "In Progress",
+    "statusColor": "text-yellow-600 bg-yellow-50",
+    "dueDate": "Due in 2 days",
+    "iconColor": "text-purple-600 bg-purple-50",
+    "iconName": "documents-outline",
+    "tags": ["Required", "In Progress", "All"],
+    "detailsType": "documents",
+    "details": [
+      { "id": "d1", "name": "Passport copy", "desc": "Photo page, clearly readable", "required": true, "status": "MISSING", "icon": "id-card-outline", "iconColor": "text-teal-500 bg-teal-50" },
+      { "id": "d2", "name": "Visa / work permit", "desc": "Approved visa document", "required": true, "status": "MISSING", "icon": "briefcase-outline", "iconColor": "text-pink-500 bg-pink-50" },
+      { "id": "d3", "name": "Signed contract", "desc": "Employment agreement", "required": true, "status": "UPLOADED", "icon": "document-outline", "iconColor": "text-yellow-600 bg-yellow-50" },
+      { "id": "d4", "name": "Passport photo", "desc": "Recent ID photograph", "required": true, "status": "MISSING", "icon": "camera-outline", "iconColor": "text-red-500 bg-red-50" },
+      { "id": "d5", "name": "Marriage certificate", "desc": "If applicable", "required": true, "status": "MISSING", "icon": "document-text-outline", "iconColor": "text-blue-500 bg-blue-50" }
+    ]
+  },
+  {
+    "id": "t3",
+    "title": "Update Calendar",
+    "subtitle": "Pick travel & onboarding dates.",
+    "status": "Pending",
+    "statusColor": "text-gray-500 bg-gray-100",
+    "dueDate": "Due next week",
+    "iconColor": "text-red-500 bg-red-50",
+    "iconName": "calendar-outline",
+    "tags": ["All", "Pending"],
+    "detailsType": "calendar",
+    "details": {
+      "departure": "12/05/2026",
+      "arrival": "12/05/2026",
+      "onboarding": "12/05/2026",
+      "familyArrival": "12/05/2026"
+    }
+  },
+  {
+    "id": "t4",
+    "title": "Expense reimbursement",
+    "subtitle": "Upload receipts & claim expenses.",
+    "status": "Pending",
+    "statusColor": "text-gray-500 bg-gray-100",
+    "dueDate": null,
+    "iconColor": "text-teal-500 bg-teal-50",
+    "iconName": "receipt-outline",
+    "tags": ["All", "Pending"],
+    "detailsType": "none"
+  },
+  {
+    "id": "t5",
+    "title": "Add personal details",
+    "subtitle": "Confirm your contact and passport info.",
+    "status": "Completed",
+    "statusColor": "text-teal-600 bg-teal-50",
+    "dueDate": null,
+    "iconColor": "text-teal-600 bg-teal-50",
+    "iconName": "checkmark",
+    "tags": ["Required", "Completed", "All"],
+    "detailsType": "none"
+  }
+]
