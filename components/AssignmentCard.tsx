@@ -1,25 +1,29 @@
-import { View, Text } from 'react-native';
-import { LinearGradient } from 'expo-linear-gradient';
+import { View, Text, TouchableOpacity } from 'react-native';
+import { Ionicons } from '@expo/vector-icons';
+import { useRouter } from 'expo-router';
 
 export function AssignmentCard() {
+  const router = useRouter();
+
   return (
-    <LinearGradient
-      colors={['#7E57C2', '#BFA687']}
-      start={{ x: 0, y: 0 }}
-      end={{ x: 1, y: 1 }}
-      className="rounded-3xl p-5 mt-6 shadow-sm"
-    >
-      <View className="bg-white/20 self-start px-3 py-1 rounded-full mb-3">
-        <Text className="text-white text-xs font-medium">Step 1 of 5</Text>
-      </View>
+    <View className="bg-white rounded-3xl p-6 mt-6 shadow-sm border border-gray-50">
+      <Text className="text-[#2EB5BF] text-sm font-medium mb-2">Tokyo assignment</Text>
       
-      <Text className="text-white text-2xl font-bold mb-2">
-        Congratulations On Your{'\n'}International Assignment
+      <Text className="text-black text-2xl font-bold mb-3 leading-tight">
+        Your Move Has 3 Priority Actions
       </Text>
       
-      <Text className="text-white/80 text-sm leading-5">
-        A new chapter awaits. We'll guide you from{'\n'}paperwork to your first day abroad.
+      <Text className="text-gray-500 text-sm mb-6 leading-5">
+        Complete required items first to reduce compliance risk and keep your relocation on schedule.
       </Text>
-    </LinearGradient>
+      
+      <TouchableOpacity 
+        onPress={() => router.push('/tasks')}
+        className="bg-[#2EB5BF] flex-row items-center justify-center py-4 rounded-2xl"
+      >
+        <Text className="text-white text-base font-semibold mr-2">Review required action</Text>
+        <Ionicons name="arrow-forward" size={20} color="white" />
+      </TouchableOpacity>
+    </View>
   );
 }

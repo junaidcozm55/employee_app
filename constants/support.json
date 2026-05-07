@@ -1,0 +1,42 @@
+{
+  "specialist": {
+    "name": "Sarah Chen",
+    "role": "Relocation specialist",
+    "team": "Tokyo team",
+    "email": "sars.chen@company.com",
+    "phone": "+1 (555) 123-4567",
+    "isOnline": true
+  },
+  "faqs": [
+    {
+      "id": "faq1",
+      "question": "What documents do I need for my visa?",
+      "answer": "You will need your passport, signed employment contract, proof of qualifications, and passport-sized photos. Specific requirements vary by destination country."
+    },
+    {
+      "id": "faq2",
+      "question": "How do I update my housing preference?",
+      "answer": "Go to Tasks > Benefit Elections > Housing section. You can switch between company accommodation and housing allowance at any time before your move date."
+    },
+    {
+      "id": "faq3",
+      "question": "When will my work permit be ready?",
+      "answer": "Work permit processing typically takes 4-8 weeks depending on the destination country. You can track the status in Services > Status > Immigration."
+    },
+    {
+      "id": "faq4",
+      "question": "Can I change my travel dates?",
+      "answer": "Yes, travel dates can be adjusted up to 2 weeks before departure. Go to Tasks > Update Calendar to modify your dates."
+    },
+    {
+      "id": "faq5",
+      "question": "How does split pay work?",
+      "answer": "Split pay divides your salary between your home and host country bank accounts. You can choose the ratio in Tasks > Benefit Elections > Split Pay."
+    },
+    {
+      "id": "faq6",
+      "question": "Who handles my tax filing?",
+      "answer": "Your assigned tax consultant will handle both home and host country tax filings. Check Services > Status > Tax for details and timelines."
+    }
+  ]
+}

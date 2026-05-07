@@ -1,5 +1,17 @@
 [
   {
+    "id": "t5",
+    "title": "Add personal details",
+    "subtitle": "Confirm your contact and passport info.",
+    "status": "Completed",
+    "statusColor": "text-teal-600 bg-teal-50",
+    "dueDate": null,
+    "iconColor": "text-teal-600 bg-teal-50",
+    "iconName": "checkmark-circle-outline",
+    "tags": ["Required", "Completed", "All"],
+    "detailsType": "none"
+  },
+  {
     "id": "t1",
     "title": "Select benefit elections",
     "subtitle": "Schooling, housing & family support.",
@@ -7,15 +19,45 @@
     "statusColor": "text-yellow-600 bg-yellow-50",
     "dueDate": "Due in 3 days",
     "iconColor": "text-yellow-600 bg-yellow-50",
-    "iconName": "document-text-outline",
+    "iconName": "list-outline",
     "tags": ["Required", "In Progress", "All"],
     "detailsType": "benefits",
     "details": {
-      "housing": "Provided housing",
-      "schooling": false,
-      "healthInsurance": true,
-      "homeFlights": false,
-      "vehicle": false
+      "housing": {
+        "options": [
+          { "id": "h1", "name": "Company accommodation", "description": "Fully managed and provided by your employer at the host location." },
+          { "id": "h2", "name": "Housing allowance", "description": "Monthly cash allowance to source and manage your own housing." }
+        ],
+        "selected": "h1"
+      },
+      "shipping": {
+        "options": [
+          { "id": "s1", "name": "Air Freight", "description": "Fast transport for essentials only." },
+          { "id": "s2", "name": "Cash allowance", "description": "Lump sum paid in your home country to self-arrange." },
+          { "id": "s3", "name": "Pay as you Go", "description": "Reimbursed on actuals, up to the policy limited." },
+          { "id": "s4", "name": "Sea Freight", "description": "Full container shipment for larger household moves." }
+        ],
+        "selected": null
+      },
+      "education": {
+        "levels": ["Kindergarten", "Elementary", "Middle school", "High school"],
+        "values": { "Kindergarten": 0, "Elementary": 0, "Middle school": 0, "High school": 0 }
+      },
+      "splitPay": {
+        "options": [
+          { "id": "sp1", "name": "35% Home / 65% Host", "description": "Part salary paid in home country, part in host country." },
+          { "id": "sp2", "name": "55% Home / 45% Host", "description": "Part salary paid in home country, part in host country." },
+          { "id": "sp3", "name": "85% Home / 15% Host", "description": "Part salary paid in home country, part in host country." }
+        ],
+        "selected": null
+      },
+      "sharePurchase": {
+        "options": [
+          { "id": "sh1", "name": "Option 1 - country", "description": "Continue ESPP participation under your home country enrollment." },
+          { "id": "sh2", "name": "Option 2 - Host country", "description": "Transfer to Host country ESPP terms for the duration of the assignment." }
+        ],
+        "selected": null
+      }
     }
   },
   {
@@ -63,20 +105,8 @@
     "statusColor": "text-gray-500 bg-gray-100",
     "dueDate": null,
     "iconColor": "text-teal-500 bg-teal-50",
-    "iconName": "receipt-outline",
+    "iconName": "list-outline",
     "tags": ["All", "Pending"],
-    "detailsType": "none"
-  },
-  {
-    "id": "t5",
-    "title": "Add personal details",
-    "subtitle": "Confirm your contact and passport info.",
-    "status": "Completed",
-    "statusColor": "text-teal-600 bg-teal-50",
-    "dueDate": null,
-    "iconColor": "text-teal-600 bg-teal-50",
-    "iconName": "checkmark",
-    "tags": ["Required", "Completed", "All"],
     "detailsType": "none"
   }
 ]

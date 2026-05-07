@@ -1,0 +1,52 @@
+[
+  {
+    "id": "n1",
+    "title": "Visa documents approved",
+    "message": "Your work permit application has been approved. Download the document from Services.",
+    "time": "2 min ago",
+    "icon": "checkmark-circle",
+    "iconColor": "#22C55E",
+    "iconBg": "bg-[#F0FDF4]",
+    "read": false
+  },
+  {
+    "id": "n2",
+    "title": "New task assigned",
+    "message": "Please complete your benefit elections before May 22, 2026.",
+    "time": "1 hour ago",
+    "icon": "list-outline",
+    "iconColor": "#2EB5BF",
+    "iconBg": "bg-[#F0FDFD]",
+    "read": false
+  },
+  {
+    "id": "n3",
+    "title": "Sarah Chen sent a message",
+    "message": "Hi Anya, just checking in — do you need help with your housing selection?",
+    "time": "3 hours ago",
+    "icon": "chatbubble-outline",
+    "iconColor": "#9333EA",
+    "iconBg": "bg-[#F5F3FF]",
+    "read": false
+  },
+  {
+    "id": "n4",
+    "title": "Document uploaded",
+    "message": "Your signed contract has been successfully uploaded and verified.",
+    "time": "Yesterday",
+    "icon": "document-text-outline",
+    "iconColor": "#B8860B",
+    "iconBg": "bg-[#FEF9E7]",
+    "read": true
+  },
+  {
+    "id": "n5",
+    "title": "Area orientation scheduled",
+    "message": "Your area orientation in Tokyo has been scheduled for June 5, 2026.",
+    "time": "2 days ago",
+    "icon": "calendar-outline",
+    "iconColor": "#EF4444",
+    "iconBg": "bg-[#FEF2F2]",
+    "read": true
+  }
+]

@@ -1,0 +1,78 @@
+{
+  "status": {
+    "Tax": {
+      "hero": {
+        "title": "Tax services for international assignments",
+        "employee": "Richard Liberty",
+        "date": "25/03/2026",
+        "status": "INITIATED"
+      },
+      "items": [
+        { "id": "t1", "name": "A1/Social Security Certificate", "duration": "4 weeks", "status": "Not Started" },
+        { "id": "t2", "name": "Host Tax Briefing", "duration": "3 weeks", "status": "Not Started" },
+        { "id": "t3", "name": "Home Tax Briefing", "duration": "3 weeks", "status": "Scheduled" },
+        { "id": "t4", "name": "Host Tax Return", "duration": "6 weeks", "status": "Not Started" }
+      ]
+    },
+    "Destination Services": {
+      "hero": {
+        "title": "Support services for settling in the new location",
+        "employee": "Richard Liberty",
+        "date": "25/03/2026",
+        "status": "INITIATED"
+      },
+      "items": [
+        { "id": "ds1", "name": "Settling-In Services", "duration": "6 weeks", "status": "Not Started" },
+        { "id": "ds2", "name": "Area Orientation", "duration": "3 weeks", "status": "In Progress" },
+        { "id": "ds3", "name": "School Search", "duration": "4 weeks", "status": "Not Started" },
+        { "id": "ds4", "name": "Home Search", "duration": "3 weeks", "status": "Scheduled" }
+      ]
+    },
+    "Immigration": {
+      "hero": {
+        "title": "Immigration services for international assignments",
+        "employee": "Richard Liberty",
+        "date": "26/03/2026",
+        "status": "INITIATED"
+      },
+      "items": [
+        { "id": "im1", "name": "Family Immigration Support", "duration": "6 weeks", "status": "Not Started" },
+        { "id": "im2", "name": "Residence Permit", "duration": "4 weeks", "status": "In Progress" },
+        { "id": "im3", "name": "Visa Application", "duration": "4 weeks", "status": "Completed" }
+      ]
+    }
+  },
+  "documents": [
+    { "id": "d1", "name": "Work Permit", "category": "Immigration", "date": "12 Mar 2026", "status": "Ready", "icon": "document-text-outline", "iconColor": "text-teal-600 bg-teal-50", "fileUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf", "fileName": "Work_Permit.pdf" },
+    { "id": "d2", "name": "Business Visa", "category": "Immigration", "date": "08 Mar 2026", "status": "Ready", "icon": "briefcase-outline", "iconColor": "text-purple-600 bg-purple-50", "fileUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf", "fileName": "Business_Visa.pdf" },
+    { "id": "d3", "name": "AI Certificate", "category": "Tax", "date": "Pending", "status": "Processing", "icon": "document-outline", "iconColor": "text-red-500 bg-red-50", "fileUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf", "fileName": "AI_Certificate.pdf" },
+    { "id": "d4", "name": "Residence Permit", "category": "Immigration", "date": "Pending", "status": "Processing", "icon": "card-outline", "iconColor": "text-orange-500 bg-orange-50", "fileUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf", "fileName": "Residence_Permit.pdf" },
+    { "id": "d5", "name": "Tax Briefing Notes", "category": "Tax", "date": "20 Mar 2026", "status": "Ready", "icon": "list-outline", "iconColor": "text-blue-500 bg-blue-50", "fileUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf", "fileName": "Tax_Briefing_Notes.pdf" }
+  ],
+  "culture": {
+    "hero": {
+      "location": "Destination • Tokyo, Japan",
+      "title": "Feel At Home, Faster",
+      "subtitle": "Bite-sized tips to help you connect with local culture."
+    },
+    "tips": [
+      { "id": "c1", "name": "Dining", "icon": "cafe-outline" },
+      { "id": "c2", "name": "Language", "icon": "language-outline" },
+      { "id": "c3", "name": "Punctuality", "icon": "time-outline" }
+    ],
+    "dosAndDonts": {
+      "dos": [
+        "Bow when greeting",
+        "Remove shoes indoors",
+        "Be on time",
+        "Use both hands to give items"
+      ],
+      "donts": [
+        "Tip at restaurants",
+        "Speak loudly on transit",
+        "Point with chopsticks",
+        "Skip business cards"
+      ]
+    }
+  }
+}

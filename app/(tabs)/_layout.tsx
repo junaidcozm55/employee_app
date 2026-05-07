@@ -25,7 +25,7 @@ export default function TabLayout() {
       <Tabs.Screen
         name="culture"
         options={{
-          title: 'Culture',
+          title: 'Services',
         }}
       />
       <Tabs.Screen
