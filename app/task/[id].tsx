@@ -1,6 +1,6 @@
 import { Ionicons } from '@expo/vector-icons';
 import { useLocalSearchParams, useRouter, Stack } from 'expo-router';
-import React from 'react';
+import React, { useState } from 'react';
 import { ScrollView, Text, TouchableOpacity, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
@@ -9,12 +9,14 @@ import tasksData from '@/constants/tasks.json';
 import { BenefitElectionsDetail } from '@/components/task-details/BenefitElectionsDetail';
 import { ProvideDocumentsDetail } from '@/components/task-details/ProvideDocumentsDetail';
 import { UpdateCalendarDetail } from '@/components/task-details/UpdateCalendarDetail';
+import { PersonalDetailsDetail } from '@/components/task-details/PersonalDetailsDetail';
 
 export default function TaskDetailScreen() {
   const { id } = useLocalSearchParams();
   const router = useRouter();
 
   const task = tasksData.find(t => t.id === id);
+  const [taskDetails, setTaskDetails] = useState<any>(task?.details);
 
   if (!task) {
     return (
@@ -27,11 +29,29 @@ export default function TaskDetailScreen() {
   const renderDetailForm = () => {
     switch (task.detailsType) {
       case 'benefits':
-        return <BenefitElectionsDetail data={task.details} />;
+        return <BenefitElectionsDetail data={taskDetails} />;
       case 'documents':
-        return <ProvideDocumentsDetail data={task.details as any[]} />;
+        return <ProvideDocumentsDetail data={taskDetails as any[]} />;
       case 'calendar':
-        return <UpdateCalendarDetail data={task.details} />;
+        return (
+          <UpdateCalendarDetail
+            data={taskDetails}
+            onSave={(updatedData) => {
+              setTaskDetails(updatedData);
+              router.back();
+            }}
+          />
+        );
+      case 'personal':
+        return (
+          <PersonalDetailsDetail
+            data={taskDetails as any}
+            onSave={(updatedData) => {
+              setTaskDetails(updatedData);
+              router.back();
+            }}
+          />
+        );
       default:
         return (
            <View className="mt-8 items-center">
@@ -42,7 +62,7 @@ export default function TaskDetailScreen() {
   };
 
   return (
-    <SafeAreaView edges={['top']} className="flex-1 bg-[#F5F5F5]">
+    <SafeAreaView edges={['top', 'bottom']} className="flex-1 bg-[#F5F5F5]">
       <Stack.Screen options={{ headerShown: false }} />
       {/* Header */}
       <View className="flex-row items-center px-4 py-4">
@@ -55,7 +75,7 @@ export default function TaskDetailScreen() {
         <Text className="text-xl font-bold ml-4">{task.title}</Text>
       </View>
 
-      <ScrollView className="flex-1 px-5 pt-2" showsVerticalScrollIndicator={false} contentContainerStyle={{ paddingBottom: 40 }}>
+      <ScrollView className="flex-1 px-5 pt-2" showsVerticalScrollIndicator={false} contentContainerStyle={{ paddingBottom: 112 }}>
         
         {/* Task Summary Header inside card */}
         <View className="bg-white rounded-[24px] p-5 shadow-sm border border-gray-100 flex-row items-center mb-6">

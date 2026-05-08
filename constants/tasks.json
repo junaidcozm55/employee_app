@@ -9,7 +9,14 @@
     "iconColor": "text-teal-600 bg-teal-50",
     "iconName": "checkmark-circle-outline",
     "tags": ["Required", "Completed", "All"],
-    "detailsType": "none"
+    "detailsType": "personal",
+    "details": {
+      "firstName": "",
+      "lastName": "",
+      "email": "",
+      "phone": "",
+      "passport": null
+    }
   },
   {
     "id": "t1",

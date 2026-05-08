@@ -66,14 +66,29 @@ export default function TasksScreen() {
         </View>
 
         {/* Filter Tabs */}
-        <ScrollView horizontal showsHorizontalScrollIndicator={false} className="flex-row my-[10px]">
+        <ScrollView
+          horizontal
+          showsHorizontalScrollIndicator={false}
+          className="flex-row my-[10px]"
+          contentContainerStyle={{ paddingVertical: 2 }}
+        >
           {filters.map(filter => (
             <TouchableOpacity
               key={filter}
               onPress={() => setActiveFilter(filter)}
-              className={`px-5 py-2.5 rounded-2xl mr-3 ${activeFilter === filter ? 'bg-black shadow-md' : 'bg-white border border-gray-100 shadow-sm'}`}
+              className={`h-11 px-6 rounded-[16px] mr-2.5 items-center justify-center border ${
+                activeFilter === filter
+                  ? 'bg-black border-black'
+                  : 'bg-[#F9FAFB] border-[#E5E7EB]'
+              }`}
             >
-              <Text className={`text-sm font-bold ${activeFilter === filter ? 'text-white' : 'text-gray-400'}`}>{filter}</Text>
+              <Text
+                className={`text-sm font-bold ${
+                  activeFilter === filter ? 'text-white' : 'text-[#9CA3AF]'
+                }`}
+              >
+                {filter}
+              </Text>
             </TouchableOpacity>
           ))}
         </ScrollView>
